@@ -14,7 +14,7 @@
     },
     "variables": {
         "networkInterfaceName": "VS2019NIC",
-        "networkSecurityGroupName": "VS2019NSG",
+        "networkSecurityGroupName": "RemoteDesktopNSG",
         "networkSecurityGroupRules": [
             {
                 "name": "RDP",
@@ -31,15 +31,15 @@
             }
         ],
         "subnetName": "default",
-        "virtualNetworkName": "VirtualMachinesVNET",
+        "virtualNetworkName": "LabEnvironmentVNET",
         "addressPrefixes": [
-            "10.0.0.0/24"
+            "192.168.0.0/16"
         ],
         "subnets": [
             {
                 "name": "default",
                 "properties": {
-                    "addressPrefix": "10.0.0.0/24"
+                    "addressPrefix": "192.168.0.0/24"
                 }
             }
         ],
