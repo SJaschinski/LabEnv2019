@@ -9,12 +9,12 @@
             "type": "string"
         },
         "adminPassword": {
-            "type": "secureString"
+            "type": "securestring"
         }
     },
     "variables": {
-        "networkInterfaceName": "VS2019-nic",
-        "networkSecurityGroupName": "VS2019-nsg",
+        "networkInterfaceName": "VS2019NIC",
+        "networkSecurityGroupName": "VS2019NSG",
         "networkSecurityGroupRules": [
             {
                 "name": "RDP",
@@ -31,7 +31,7 @@
             }
         ],
         "subnetName": "default",
-        "virtualNetworkName": "VirtualMachines-vnet",
+        "virtualNetworkName": "VirtualMachinesVNET",
         "addressPrefixes": [
             "10.0.0.0/24"
         ],
@@ -43,10 +43,10 @@
                 }
             }
         ],
-        "publicIpAddressName": "VS2019-ip",
+        "publicIpAddressName": "VS2019PIP",
         "publicIpAddressType": "Static",
         "publicIpAddressSku": "Basic",
-        "virtualMachineName": "VS2019-vm",
+        "virtualMachineName": "VS2019VM",
         "osDiskType": "Premium_LRS",
         "virtualMachineSize": "Standard_D2s_v3",
         "nsgId": "[resourceId(resourceGroup().name, 'Microsoft.Network/networkSecurityGroups', variables('networkSecurityGroupName'))]",
