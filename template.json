@@ -47,7 +47,7 @@
     "virtualMachineName": "VS2019VM",
     "osDiskName": "VS2019OSDISK",
     "osDiskType": "Premium_LRS",
-    "virtualMachineSize": "Standard_D2s_v3",
+    "virtualMachineSize": "Standard_D4s_v3",
     "nsgId": "[resourceId(resourceGroup().name, 'Microsoft.Network/networkSecurityGroups', variables('networkSecurityGroupName'))]",
     "vnetId": "[resourceId(resourceGroup().name,'Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetId'), '/subnets/', variables('subnetName'))]"
